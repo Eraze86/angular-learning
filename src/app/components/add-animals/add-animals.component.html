@@ -1,7 +1,9 @@
 <p>vänligen skriv in infon om ditt djur</p>
 
-Namn:<input>
-Ålder:<input>
-Färg:<input>
+Namn:<input #animalName > 
+Ålder:<input #animalAge>
+Färg:<input #animalColor>
 <br><br>
-<button>Spara till listan</button>
+<button (click)="getAnimalFromInput (animalName.value)">Spara till listan</button>
+
+{{ name }}
