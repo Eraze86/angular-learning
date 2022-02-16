@@ -10,6 +10,15 @@ export class AddAnimalsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+  }
+  name:string = "";
+  age: number = 
+  color: string: = "";
+
+  getAnimalFromInput(theValue: any){
+    this.name = theValue;
+    console.log(this.name)
   }
 
 }
