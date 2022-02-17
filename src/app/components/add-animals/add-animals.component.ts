@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AnimalComponent } from '../animal/animal.component';
 
 @Component({
   selector: 'app-add-animals',
@@ -6,19 +7,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-animals.component.scss']
 })
 export class AddAnimalsComponent implements OnInit {
-
+  name:string = "";
+  age: number = 0;
+  color: string = "";
   constructor() { }
 
   ngOnInit(): void {
 
   }
-  name:string = "";
-  age: number = 
-  color: string: = "";
 
+// värdet skickas hit, theValue. Sen vill jag att this.name tar värdet från theValue. så jag kan använda det i html
   getAnimalFromInput(theValue: any){
-    this.name = theValue;
-    console.log(this.name)
+    this.name, this.age, this.color = theValue;
+    
+   
+    console.log(this.name, this.age, this.color)
+    
   }
 
 }
