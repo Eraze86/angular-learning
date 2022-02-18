@@ -17,8 +17,10 @@ export class AddAnimalsComponent implements OnInit {
   }
 
 // värdet skickas hit, theValue. Sen vill jag att this.name tar värdet från theValue. så jag kan använda det i html
-  getAnimalFromInput(theValue: any){
-    this.name, this.age, this.color = theValue;
+  getAnimalFromInput(name: string, age: string, color: string){
+    this.name = name;
+    this.age = parseInt(age)
+    this.color = color
     
    
     console.log(this.name, this.age, this.color)
